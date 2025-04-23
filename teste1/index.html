@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Controle de Estoque</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Controle de Estoque</h1>
+
+  <form id="product-form">
+    <input type="text" id="product-name" placeholder="Nome do Produto" required />
+    <input type="number" id="product-qty" placeholder="Quantidade" min="1" required />
+    <button type="submit">Adicionar</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Produto</th>
+        <th>Quantidade</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody id="inventory-body">
+    </tbody>
+  </table>
+
+  <script src="js.js"> </script>
+</body>
+</html>
